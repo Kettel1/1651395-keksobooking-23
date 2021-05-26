@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
 * Студент: [Андрей Коровин](https://up.htmlacademy.ru/javascript/23/user/1651395).
-* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima);
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
