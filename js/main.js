@@ -1,5 +1,5 @@
 getRandomIntegerNumber();
-getRandomfractionalNumber();
+getRandomFractionalNumber();
 
 function getRandomIntegerNumber(firstNumber, secondNumber) {
   firstNumber = Math.ceil(firstNumber);
@@ -12,7 +12,7 @@ function getRandomIntegerNumber(firstNumber, secondNumber) {
   }
 }
 
-function getRandomfractionalNumber(firstNumber, secondNumber, quantitySign) {
+function getRandomFractionalNumber(firstNumber, secondNumber, quantitySign) {
   let result = Math.random() * (secondNumber - firstNumber) + firstNumber;
   alert(result.toFixed(quantitySign));
 };
