@@ -3,7 +3,7 @@ const getRandomIntegerNumber = (firstNumber, secondNumber) => {
   secondNumber = Math.floor(secondNumber);
 
   if (Math.sign(firstNumber) === -1 || Math.sign(secondNumber) === -1) {
-    alert ('Не положительные числа');
+    return ('Не положительные числа');
   } else {
     return (Math.floor(Math.random() * (secondNumber - firstNumber) + firstNumber));
   }
