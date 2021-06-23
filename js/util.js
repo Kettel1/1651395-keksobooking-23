@@ -1,9 +1,3 @@
-/**
- *
- * @param {Принимает целое число}firstNumber
- * @param {Принимает целое число}secondNumber
- * @returns {string|возвращает рандомное целое число в указаном диапазоне}
- */
 const getRandomIntegerNumber = (firstNumber, secondNumber) => {
   firstNumber = Math.ceil(firstNumber);
   secondNumber = Math.floor(secondNumber);
@@ -15,31 +9,24 @@ const getRandomIntegerNumber = (firstNumber, secondNumber) => {
   }
 };
 
-/**
- *
- * @param {Принимает число с остатком}firstNumber
- * @param {Принимает число с остатком}secondNumber
- * @param {Принимает целое число, кол-во знаков после запятов}quantitySign
- * @returns {string}
- */
 const getRandomFractionalNumber = (firstNumber, secondNumber, quantitySign) => {
   const result = Math.random() * (secondNumber - firstNumber) + firstNumber;
   return result.toFixed(quantitySign);
 };
 
+const getRandomArr = (arr) => {
+  const lengthArr = getRandomIntegerNumber(0, arr.length - 1);
+  const array = [];
+  for (let i = 0; i <= lengthArr; i++) {
+    array.push(arr[i]);
+  }
+  return array;
+};
 
-/**
- *
- * @param {Принимает массив данных}
- * @returns {Возвращает рандомное значение массива}
- */
+//Возвращает один случайный элемент из массива
 const getRandomArrayElement = (arr) => arr[getRandomIntegerNumber(0, arr.length)];
 
-/**
- *
- * @param {Принимает любой массив}
- * @returns {Возвращает случайное кол-во элементов массива}
- */
+
 const getRandomArrayElements = (arr) => {
   const elements = getRandomIntegerNumber(0, arr.length);
   let tempArr = [];
@@ -61,4 +48,4 @@ const getRandomArrayElements = (arr) => {
   return tempArr;
 };
 
-export {getRandomIntegerNumber, getRandomArrayElements, getRandomArrayElement, getRandomFractionalNumber};
+export {getRandomIntegerNumber, getRandomArrayElements, getRandomArrayElement, getRandomFractionalNumber, getRandomArr};
