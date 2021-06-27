@@ -9,5 +9,5 @@ const allOffersFragment = generateOffer(similarOffer);
 const mapCanvas = document.querySelector('#map-canvas');
 mapCanvas.appendChild(allOffersFragment.firstChild);
 
-enableForm();
-disabledForm();
+// enableForm();
+// disabledForm();

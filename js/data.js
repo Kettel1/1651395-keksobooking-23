@@ -48,6 +48,14 @@ const TYPE_RU = {
   hotel: 'Отель',
 };
 
+const PRICE_FOR_TYPE = {
+  bungalow: 0,
+  flat: 1000,
+  hotel: 3000,
+  house: 5000,
+  palace: 10000,
+};
+
 const LAT_Y = [35.65000, 35.70000];
 const LNG_X = [139.70000, 139.80000];
 
@@ -84,4 +92,4 @@ const createOffer = () => {
   };
 };
 
-export {createOffer, TYPE_RU};
+export {createOffer, TYPE_RU, PRICE_FOR_TYPE};
